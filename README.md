@@ -50,7 +50,6 @@ Optional configuration lives in `.env.local` (see `.env.example`): `NEXT_PUBLIC_
 | `npm run build` / `npm start` | Production build and server |
 | `npm run lint` / `npm run typecheck` | Static checks |
 | `npm run smoke` | End-to-end proof on Testnet with throwaway accounts: register, verify, tamper check, license payment |
-| `npm run handoff -- people` | Generate one zip per contributor with GitHub Desktop instructions, see [docs/WORK_PACKAGES.md](docs/WORK_PACKAGES.md) |
 
 ## Project map
 
@@ -61,15 +60,14 @@ hooks/                  Wallet, signer, publish, certificate and purchase flows
 lib/stellar/            Stellar core: config, hashing, Horizon access, registry, payments
 lib/                    Domain types and library helpers
 store/                  Wallet and library state (zustand)
-docs/                   Architecture, demo script, work packages
-scripts/                Testnet smoke test and handoff tooling
+docs/                   Architecture and demo script
+scripts/                Testnet smoke test
 ```
 
 ## Documentation
 
 - [Architecture and decisions](docs/ARCHITECTURE.md) — how it works, trust model, limitations, roadmap
 - [Demo script](docs/DEMO.md) — a 5-minute walkthrough
-- [Work packages](docs/WORK_PACKAGES.md) — who commits what
 
 ## Brand
 
